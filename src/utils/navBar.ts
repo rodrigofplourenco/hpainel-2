@@ -1,3 +1,4 @@
+import { IconType } from 'react-icons';
 import {
   FaHome,
   FaUserCog,
@@ -8,7 +9,13 @@ import {
   FaSignOutAlt
 } from 'react-icons/fa';
 
-const navBar = [
+interface INavItem {
+  name: string;
+  path: string;
+  icon: IconType;
+}
+
+const navBar: INavItem[] = [
   {
     name: 'Início',
     path: '/painel',
